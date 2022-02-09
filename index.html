@@ -1,0 +1,80 @@
+
+<html>
+ 
+    <head>
+        <title>Weather App</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+ <link rel="stylesheet" href="./Style/style.css">
+    </head>
+<body class="responsive">
+    <!--Navigation bar-->
+<div class="container">
+
+        <nav class="navbar navbar-expand-sm bg-dark fixed-top">
+  <div class="container-fluid">
+    <span id="span1">Weather Forecasting &#127774;</span>
+  </div>
+</nav>
+
+</div>
+
+<!--SearchBox-->
+<div class="container-fluid container1 transbox">
+    <div class="row">
+        <div class="col-sm-8">
+
+                <div class="input-group inputSearch" >
+                      <div class="form-outline">
+                      <input type="search" id="searchInput" class="form-control" placeholder="Enter City Name" spellcheck="false" />
+                    
+                       
+                      
+                    </div>
+                    <button type="button" class="btn btn-primary " id="searchBtn">Search</button>
+                </div>
+
+                <!--Weather Descriptions-->
+                <div id="weatherContainer">
+                             <div id="weatherDescription" class="div2">
+                            <h1 id="cityHeader"></h1>
+                             <div id="weatherMain">
+                                 <div id="temperature"></div>
+                                 <div id="weatherDescriptionHeader"></div>
+                                 <div><img id="documentIconImg"></div>
+                             </div>
+               
+                                <div id="windSpeed" class="bottom-details"></div>
+                                <div id="humidity" class="bottom-details"></div>
+ 
+                          </div>
+                </div>
+
+        </div>
+<!--GeoLocation map-->
+        <div class="col-sm-4"> 
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded" >
+                <div class="card-title" id="geolocation"><b>Current Location</b> <i class="material-icons">&#xe55e;</i></span>
+                
+            </div>
+            <div id="demo2" ></div>
+            <div id="demo"></div>
+            
+        </div> 
+    </div>
+</div>
+
+<!--footer-->
+<div class="footer">
+  <p id="footerP">Terms of Use | Privacy Policy | Cookie Policy | TAG Disclosure</p>
+</div>
+
+
+
+
+        <script src="./Feature/index.js"></script>
+        <script src="https://maps.google.com/maps/api/js?sensor=false">
+  </script>
+    </body>
+</html>
